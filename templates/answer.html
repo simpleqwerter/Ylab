@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for field, value in params.items()  %}
+        <p>{{ field }} {{ value }}</p>
+    {% endfor %}
+<!--    <img src="{{ url_for('static', filename='img') }}" alt="plot image">-->
+    <img src="{{ url_for('fig', img = title) }}" alt="Image Placeholder">
+</body>
+</html>
